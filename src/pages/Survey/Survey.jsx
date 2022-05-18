@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function Survey() {
     const { questionNumber } = useParams()
     const questionNumberInt = parseInt(questionNumber)
-    const prevQuestionNumber = questionNumber === 1 ? 1 : questionNumber - 1
-    const nextQuestionNumber = questionNumber + 1
+    const prevQuestionNumber = questionNumberInt === 1 ? 1 : questionNumberInt - 1
+    const nextQuestionNumber = questionNumberInt + 1
     return (
         <div>
             <h1>Questionnaire</h1>
