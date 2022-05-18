@@ -15,9 +15,9 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/survey/:questionNumber" element={<Survey />} />
-        <Route path="/" element={<Error />} />
         <Route path="/results" element={<Results />} />
         <Route path="/freelances" element={<Freelances />} />
+        <Route element={<Error/>} />
       </Routes>
     </Router>
   </React.StrictMode>,
