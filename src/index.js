@@ -15,3 +15,13 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/survey/:questionNumber" element={<Survey />} />
+        <Route path="/results" element={<Results />} />
+        <Route path="/freelances" element={<Freelances />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
+
+          
